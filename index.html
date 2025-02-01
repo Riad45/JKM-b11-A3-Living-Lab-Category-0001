@@ -49,14 +49,43 @@
 
 <body class="font-adlam text-[#111111]">
 
-    <header class="px-4 md:px-36">
-        <nav>
+    <header>
 
+        <!-- nav section -->
+
+        <nav class="flex items-center bg-[#FFF9F4] py-4 px-4 md:px-36   justify-between">
+            <!-- both for small and large device -->
+            <div class="flex items-center gap-4">
+                <img src="c1-assets/logo-header.png" alt="">
+                <h1 class="hidden font-sora text-3xl  md:block ">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+            </div>
+
+            <!-- large device only -->
+
+            <ul class="hidden gap-6 font-sora text-2xl md:flex">
+                <li><a href="">Find a pet</a></li>
+                <li><a href="">Breeds</a></li>
+                <li> <a href="">Contact us</a> </li>
+            </ul>
+
+            <div class="flex items-center gap-4 text-lg">
+                <!-- icons -->
+                <i class="hidden fa-regular fa-bell lg:block md:block "></i>
+                <i class="hidden fa-solid fa-magnifying-glass lg:block md:block "></i>
+
+                <button class=" btn btn-netural hidden border md:block border-[#FFDC26] font-sora ">Login</button>
+                <button class=" hidden md:block btn btn-warning font-sora">Register</button>
+
+                <!-- only for small device -->
+
+                <i class="fa-solid fa-bars text-3xl md:hidden"></i>
+
+            </div>
         </nav>
 
         <!-- banner section -->
 
-        <section class=" relative">
+        <section class=" relative px-4 md:px-36">
 
             <!-- banner content -->
             <div class="absolute md:top-10 z-10 ">
@@ -67,6 +96,17 @@
                     friends. Shop now and make tails wag with joy!</p>
 
                 <button class="font-sora btn btn-warning">Find a pet</button>
+
+                <div class="text-cyan-800 text-xs md:text-6xl md:mt-6">
+                    <i class="fa-solid fa-cat"></i>
+
+                    <span class="loading loading-ring loading-lg"></span>
+                    <span class="loading loading-ring loading-sm"></span>
+                    <span class="loading loading-ring loading-md"></span>
+                    <span class="loading loading-ring loading-lg"></span>
+                </div>
+
+
             </div>
 
             <!-- banner-img -->
@@ -142,9 +182,10 @@
 
                 <div class=" relative bg-[#F9DF8A] rounded-lg p-6 ">
 
-                    <div >
+                    <div>
                         <h3 class="mb-4">T-shirt For Dogs</h3>
-                        <p class="font-sora mb-4">Discover a world of treats, toys, and <br>essentials handpicked for your
+                        <p class="font-sora mb-4">Discover a world of treats, toys, and <br>essentials handpicked for
+                            your
                             furry
                             friends.</p>
 
@@ -339,6 +380,40 @@
         </section>
 
 
+        <!-- bonous section -->
+
+        <section class="my-20 md:my-36 px-4 md:px-36">
+
+            <h3 class="mb-8 md:mb-16 md:text-4xl"> Frequently Asked Questions (FAQ) </h3>
+
+            <div class="collapse collapse-arrow bg-[#ACD2FD]">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">1. What types of pets do you sell?</div>
+                <div class="collapse-content">
+                    <p class="font-sora">We sell dogs, cats, birds, fish, and small mammals like rabbits and hamsters.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-[#ACD2FD]">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">2. Do you provide health guarantees for your pets?</div>
+                <div class="collapse-content">
+                    <p class="font-sora">Yes, all pets are vet-checked and come with a health guarantee.
+
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-[#ACD2FD]">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Do you offer pet supplies and accessories?</div>
+                <div class="collapse-content">
+                    <p class="font-sora">Yes, we offer food, toys, grooming tools, and more for all pet needs.</p>
+                </div>
+            </div>
+
+        </section>
+
+
 
         <!-- Everyday price section -->
 
@@ -357,8 +432,7 @@
                         <h1 class=" md:text-3xl">Pet Grooming Mitt</h1>
                         <p class="hidden lg:text-white lg:text-2xl md:text-2xl lg:block md:block">(Easy Hair Removal)
                         </p>
-                        <h1
-                            class="text-4xl md:text-6xl ">
+                        <h1 class="text-4xl md:text-6xl ">
                             $7.99</h1>
                     </div>
                     <!-- img -->
@@ -387,6 +461,9 @@
 
 
 
+
+
+
     </main>
 
 
@@ -396,16 +473,15 @@
         <!-- news letter  -->
 
 
-        <section
-            class="bg-[#fff9f4] my-20 md:my-36 mx-4 md:mx-36 rounded-xl  relative  pb-7 bottom-48">
-        
+        <section class="bg-[#fff9f4] my-20 md:my-36 mx-4 md:mx-36 rounded-xl  relative  pb-7 bottom-48">
+
             <div class=" p-16 flex flex-col items-center justify-around gap-4 text-center md:flex-row md:text-left">
                 <!-- image -->
                 <div><img src="c1-assets/cute-pet-small.png" alt=""></div>
 
                 <!-- text content -->
-                
-                <div >
+
+                <div>
                     <h3 class="md:text-4xl">Get Pawsome News!</h3>
                     <p class="font-sora">Exclusive training tips, ticks, product deals and more.</p>
 
@@ -420,7 +496,7 @@
         <!-- main footer section -->
 
         <div>
-        
+
             <div
                 class="flex flex-col items-start justify-start lg:flex-row md:flex-row md:justify-around md:items-center px-4 md:px-36 pb-10  ">
                 <!-- 1st column items -->
